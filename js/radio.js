@@ -2,11 +2,11 @@ function isPlaying() {
 	return !document.querySelector('audio').paused;
 }
 
-function play() {
+function play1() {
 	return document.querySelector('audio').play();
 }
 
-function pause() {
+function pause1() {
 	return document.querySelector('audio').pause();
 }
 
@@ -45,8 +45,8 @@ function togglePlayPause() {
 	togglePlayPauseButton();
 
 	if (isPlaying()) {
-		pause();
+		pause1();
 	} else {
-		play();
+		play1();
 	}
 }
